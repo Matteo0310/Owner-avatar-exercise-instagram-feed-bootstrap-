@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Instagram Feed</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <script src="https://kit.fontawesome.com/98293203c0.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    .icons {display: flex;
+            justify-content: center;}
+</style>
+<body>
+  <div class="container justify-content-center">
+    <div class="row">
+      <h4 class="col-9"><i class="bi bi-instagram"></i>
+        Instagram</h4>
+      <div class="col-2"><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Create a new post</button>
+       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New Post</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Title:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="message-text" class="col-form-label">What are you thinking about?:</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send Post</button>
+              </div>
+            </div>
+          </div>
+        </div></div>
+      <div class="col"><div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-gear"></i>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Perfil</a></li>
+          <li><a class="dropdown-item" href="#">Accesibilidad</a></li>
+          <li><a class="dropdown-item" href="#">Privacidad y Data</a></li>
+          <li><a class="dropdown-item" href="#">Salir</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="icons"><ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <h4><button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="bi bi-grid-3x3-gap" class="grid"></i></button></h4>
+        </li>
+        <li class="nav-item" role="presentation">
+          <h4><button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="bi bi-square-fill" class="square"></i></button></h4>
+        </li>
+    </div>
+        
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                <div class="container">
+                    <div class="row justify-content-center m-2">
+                      <div class="col-2 m-1"><img class="dog"src="https://t2.uc.ltmcdn.com/es/posts/3/1/2/cuanto_debe_pesar_un_perro_labrador_30213_600.jpg" alt="" width="200px" height="200px"></div>
+                      <div class="col-2 m-1"><img class="mountain" src="https://www.new-walls.com/media/89/15/52/1687627552/19dd5863c25b53b3e01c730b3de8f177.jpg" alt="" width="200px" height="200px"></div>
+                      <div class="col-2 m-1"><img class="lasagna"src="https://media.istockphoto.com/id/157615990/es/foto/lasa%C3%B1a.jpg?s=612x612&w=0&k=20&c=C0gmtRAKzTBOsggzwE03lqINtesQIeKnzXw2GGVznak=" alt="" width="200px" height="200px"></div>
+                    <div class="row justify-content-center m-2">
+                      <div class="col-2 m-1"><img class="colosseo"src="https://images.squarespace-cdn.com/content/v1/5ffefde58d2cff25cf5e1f50/1637575825474-VMVIUAZCLOIP7YDLGPRD/La+Valle+del+Colosseo.JPG?format=1500w" alt="" width="200px" height="200px"></div>
+                      <div class="col-2 m-1"><img class="dama"src="https://www.worldhistory.org/img/r/p/500x600/12663.jpg?v=1691868609" alt="" width="200px" height="200px"></div>
+                      <div class="col-2 m-1"><img class="parmigiano"src="https://m.media-amazon.com/images/I/61h-lYpviZS.jpg" alt="" width="200px" height="200px"></div>
+                    <div class="row justify-content-center m-2">
+                      <div class="col-2 m-1"><img class="venezia"src="https://tourismmedia.italia.it/is/image/mitur/1600X1600_venezia_ponte_tramonto-2?wid=400&hei=400&fit=constrain,1&fmt=webp" alt="" width="200px" height="200px"></div>
+                      <div class="col-2 m-1"><img class="duomo"src="https://aws-tiqets-cdn.imgix.net/images/content/ba68144e8a5a44d2994389eb8fafe632.jpg?auto=format&fit=crop&h=800&ixlib=python-3.2.1&q=70&w=800&s=c60580f633c062ac6ad8b35e3e615348" alt="" width="200px" height="200px"></div>
+                      <div class="col-2 m-1"><img class="ronaldo"src="https://media.revistagq.com/photos/5ca5f479e6e7b792ece89172/1:1/w_900,h_900,c_limit/juventus_cristiano_ronaldo_8812.jpg" alt="" width="200px" height="200px"></div>
+                  </div>
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4"></div>
+                        <div class="col-4"><h4>My Beautiful dog</h4></div>
+                        <div class="col-1 text-secondary"><h5>1/9</h5></div>
+                    </div>
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <div class="col-4"><img class="dog"src="https://t2.uc.ltmcdn.com/es/posts/3/1/2/cuanto_debe_pesar_un_perro_labrador_30213_600.jpg" alt="" width="500px" height="400px"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4"><p><strong>206 Likes!</strong></p></div>
+                            <div class="col-md-1 text-primary"><h5><i class="fa-solid fa-thumbs-up"></i></h5></div>   
+                            <div class="row">
+                                <div class="col-4"></div>
+                                <div class="col-5"><p>The dog is a domesticated descendant of the wolf. Also called the domestic dog, it is derived from extinct Pleistocene wolves</p><hr></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4"></div>
+                        <div class="col-4"><h4>The magic of the nature!</h4></div>
+                        <div class="col-1 text-secondary"><h5>2/9</h5></div>
+                    </div>
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <div class="col-4"><img class="mountain" src="https://www.new-walls.com/media/89/15/52/1687627552/19dd5863c25b53b3e01c730b3de8f177.jpg" alt="" width="500px" height="400px"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4"><p><strong>240 Likes!</strong></p></div>
+                            <div class="col-md-1 text-primary"><h5><i class="fa-solid fa-thumbs-up"></i></h5></div>   
+                            <div class="row">
+                                <div class="col-4"></div>
+                                <div class="col-5"><p>Most geologists classify a mountain as a landform that rises at least 1,000 feet (300 meters) or more above its surrounding area. A mountain range is a series or chain of mountains that are close together.</p><hr></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4"></div>
+                        <div class="col-4"><h4>The best food ever!</h4></div>
+                        <div class="col-1 text-secondary"><h5>3/9</h5></div>
+                    </div>
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <div class="col-4"><img class="lasagna"src="https://media.istockphoto.com/id/157615990/es/foto/lasa%C3%B1a.jpg?s=612x612&w=0&k=20&c=C0gmtRAKzTBOsggzwE03lqINtesQIeKnzXw2GGVznak=" alt="" width="500px" height="400px"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4"><p><strong>190 Likes!</strong></p></div>
+                            <div class="col-md-1 text-primary"><h5><i class="fa-solid fa-thumbs-up"></i></h5></div>   
+                            <div class="row">
+                                <div class="col-4"></div>
+                                <div class="col-5"><p>Mass-produced lasagne with a ruffled edge is called lasagna riccia, doppio festone, sciabò and sciablò.In the Veneto, factory-produced lasagne are called bardele or lasagnoni. Narrower lasagne are mezze lasagne, and if with a ruffled edge, mezze lasagne ricche.</p><hr></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4"></div>
+                        <div class="col-4"><h4>The history holding on...</h4></div>
+                        <div class="col-1 text-secondary"><h5>4/9</h5></div>
+                    </div>
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <div class="col-4"><img class="colosseo"src="https://images.squarespace-cdn.com/content/v1/5ffefde58d2cff25cf5e1f50/1637575825474-VMVIUAZCLOIP7YDLGPRD/La+Valle+del+Colosseo.JPG?format=1500w" alt="" width="500px" height="400px"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4"><p><strong>400 Likes!</strong></p></div>
+                            <div class="col-md-1 text-primary"><h5><i class="fa-solid fa-thumbs-up"></i></h5></div>   
+                            <div class="row">
+                                <div class="col-4"></div>
+                                <div class="col-5"><p>The structure was officially dedicated in 80 ce by Titus in a ceremony that included 100 days of games. Later, in 82 ce, Domitian completed the work by adding the uppermost story.</p><hr></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4"></div>
+                        <div class="col-4"><h4>A real Artwork!</h4></div>
+                        <div class="col-1 text-secondary"><h5>5/9</h5></div>
+                    </div>
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <div class="col-4"><img class="dama"src="https://www.worldhistory.org/img/r/p/500x600/12663.jpg?v=1691868609" alt="" width="500px" height="400px"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4"><p><strong>232 Likes!</strong></p></div>
+                            <div class="col-md-1 text-primary"><h5><i class="fa-solid fa-thumbs-up"></i></h5></div>   
+                            <div class="row">
+                                <div class="col-4"></div>
+                                <div class="col-5"><p>The Lady with an Ermine[n 1] is a portrait painting widely attributed to the Italian Renaissance artist Leonardo da Vinci. Dated to c.1489-1491, the work is painted in oils on a panel of walnut wood.</p><hr></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4"></div>
+                        <div class="col-4"><h4>Masterpice cheese</h4></div>
+                        <div class="col-1 text-secondary"><h5>6/9</h5></div>
+                    </div>
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <div class="col-4"><img class="parmigiano"src="https://m.media-amazon.com/images/I/61h-lYpviZS.jpg" alt="" width="500px" height="400px"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4"><p><strong>260 Likes!</strong></p></div>
+                            <div class="col-md-1 text-primary"><h5><i class="fa-solid fa-thumbs-up"></i></h5></div>   
+                            <div class="row">
+                                <div class="col-4"></div>
+                                <div class="col-5"><p>Parmesan is a straw-coloured hard cheese with a natural yellow rind and rich, fruity flavour. It is made from cow's milk. Italy's Parmigiano Reggiano is the original parmesan, although similar versions and replicas can now be found from Argentina, Australia and the US.</p><hr></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4"></div>
+                        <div class="col-4"><h4>A true romantic city</h4></div>
+                        <div class="col-1 text-secondary"><h5>7/9</h5></div>
+                    </div>
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <div class="col-4"><img class="venezia"src="https://tourismmedia.italia.it/is/image/mitur/1600X1600_venezia_ponte_tramonto-2?wid=400&hei=400&fit=constrain,1&fmt=webp" alt="" width="500px" height="400px"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4"><p><strong>345 Likes!</strong></p></div>
+                            <div class="col-md-1 text-primary"><h5><i class="fa-solid fa-thumbs-up"></i></h5></div>   
+                            <div class="row">
+                                <div class="col-4"></div>
+                                <div class="col-5"><p>Venice, known also as the “City of Canals,” “The Floating City,” and “Serenissima,” is arguably one of Italy's most picturesque cities. With its winding canals, striking architecture, and beautiful bridges, Venice is a popular destination for travel.</p><hr></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4"></div>
+                        <div class="col-4"><h4>The heart of Milan</h4></div>
+                        <div class="col-1 text-secondary"><h5>8/9</h5></div>
+                    </div>
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <div class="col-4"><img class="duomo"src="https://aws-tiqets-cdn.imgix.net/images/content/ba68144e8a5a44d2994389eb8fafe632.jpg?auto=format&fit=crop&h=800&ixlib=python-3.2.1&q=70&w=800&s=c60580f633c062ac6ad8b35e3e615348" alt="" width="500px" height="400px"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4"><p><strong>500 Likes!</strong></p></div>
+                            <div class="col-md-1 text-primary"><h5><i class="fa-solid fa-thumbs-up"></i></h5></div>   
+                            <div class="row">
+                                <div class="col-4"></div>
+                                <div class="col-5"><p>The Duomo of Milan tells a story of faith and art spanning over six centuries. Construction work on the Duomo of Milan probably began in 1386.</p><hr></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4"></div>
+                        <div class="col-4"><h4>The best player so far</h4></div>
+                        <div class="col-1 text-secondary"><h5>9/9</h5></div>
+                    </div>
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <div class="col-4"><img class="ronaldo"src="https://media.revistagq.com/photos/5ca5f479e6e7b792ece89172/1:1/w_900,h_900,c_limit/juventus_cristiano_ronaldo_8812.jpg" alt="" width="500px" height="400px"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4"><p><strong>758 Likes!</strong></p></div>
+                            <div class="col-md-1 text-primary"><h5><i class="fa-solid fa-thumbs-up"></i></h5></div>   
+                            <div class="row">
+                                <div class="col-4"></div>
+                                <div class="col-5"><p>Get updates on the latest Cristiano Ronaldo News and enjoy our posts, videos and analysis on Marca English. All Cristiano Ronaldo news in the same place.</p><hr></div>
+                            </div>
+                        </div>
+                    </div>  
+            </div>
+        <br>
+
+      </div>
+</body>
+</html>
